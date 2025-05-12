@@ -23,12 +23,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a
+            <Link
               href="/"
               className="text-3xl font-extrabold text-white tracking-tight"
             >
               Jungle Safari
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Nav Links */}

@@ -41,8 +41,7 @@ const Footer = () => {
             </h3>
             <p className="text-green-100 text-sm leading-relaxed">
               Experience the thrill of the wild with our guided jungle safaris.
-              Explore exotic wildlife, lush forests, and unforgettable
-              adventures.
+              Explore exotic wildlife, lush forests, and unforgettable adventures.
             </p>
           </div>
 
@@ -66,31 +65,37 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <div className="space-y-2 text-green-100 text-sm">
-              <a
-                href="mailto:info@junglesafari.com"
-                className="hover:text-yellow-300 transition-colors duration-300"
-              >
-                Email: info@junglesafari.com
-              </a>
-              <a
-                href="tel:+919759107189"
-                className="hover:text-yellow-300 transition-colors duration-300"
-              >
-                Phone: +91 97591 07189
-              </a>
-              <a
-                href="https://maps.example.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-yellow-300 transition-colors duration-300"
-              >
-                Address: 123 Wild Trail, Jungle City, JC 45678
-              </a>
-            </div>
+            <ul className="space-y-2 text-green-100 text-sm">
+              <li>
+                <Link
+                  href="mailto:info@junglesafari.com"
+                  className="hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Email: info@junglesafari.com
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="tel:+919759107189"
+                  className="hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Phone: +91 97591 07189
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://maps.example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Address: 123 Wild Trail, Jungle City, JC 45678
+                </Link>
+              </li>
+            </ul>
             <div className="flex space-x-4 mt-4">
               {socialLinks.map((social) => (
-                <a
+                <Link
                   key={social.name}
                   href={social.href}
                   target="_blank"
@@ -99,7 +104,7 @@ const Footer = () => {
                   aria-label={`Follow us on ${social.name}`}
                 >
                   {social.icon}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
