@@ -4,15 +4,17 @@ import SafariPackage from "@/components/SafariPackage";
 import SafariZones from "@/components/SafariZones";
 import React from "react";
 import GallerySection from "@/components/GallerySection";
+import SafariServed from "@/components/SafariServed";
 
 const Home = () => {
   return (
     <>
       <Hero />
       <AboutSection />
-      <SafariPackage />
+      {/* <SafariPackage /> */}
       <SafariZones />
       <GallerySection />
+      <SafariServed />
     </>
   );
 };

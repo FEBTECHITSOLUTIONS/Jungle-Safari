@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex space-x-8">
+          {/* <div className="hidden md:flex space-x-8">
             <ul className="flex space-x-6 items-center">
               {navitems.map((item, index) => (
                 <li key={index}>
@@ -45,12 +45,12 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Book Now Button (Desktop) */}
           <div className="hidden md:block">
-            <Link
-              href="/book"
+            <Link target="_blank"
+              href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
               className="bg-yellow-400 text-green-900 px-5 py-2 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-lg transition-all duration-300"
             >
               Book Now
@@ -58,7 +58,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          {/* <div className="md:hidden">
             <button
               type="button"
               onClick={toggleMenu}
@@ -81,7 +81,7 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
         } md:hidden transition-all duration-300`}
       >
         <ul className="bg-green-800 px-4 pt-4 pb-6 space-y-4">
-          {navitems.map((item, index) => (
+          {/* {navitems.map((item, index) => (
             <li key={index}>
               <Link
                 href={item.links}
@@ -102,14 +102,14 @@ const Navbar = () => {
                 {item.name}
               </Link>
             </li>
-          ))}
+          ))} */}
           <li>
             <Link
-              href="/book"
+              href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
               onClick={toggleMenu}
               className="block bg-yellow-400 text-green-900 px-5 py-2 rounded-full font-semibold text-lg hover:bg-yellow-500 text-center transition-all duration-300"
             >
-              Book Now
+              Whatsapp Us
             </Link>
           </li>
         </ul>

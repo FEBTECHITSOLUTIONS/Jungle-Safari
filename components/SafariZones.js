@@ -2,14 +2,13 @@
 import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Link from "next/link";
-import Image from "next/image";
 
 const SafariZones = () => {
   const zones = [
     {
       name: "Dhikala Zone",
       description:
-        "The heart of Jim Corbett, Dhikala Zone is renowned for its vast grasslands and dense forests, offering the best chances to spot Royal Bengal Tigers.",
+        "The heart of Jim Corbett, Dhikala Zone is renowned for its vast grasslands and dense forests, offering the best chances to spot Royal Bengal Tigers in their natural habitat.",
       wildlife: [
         "Royal Bengal Tiger",
         "Asian Elephant",
@@ -21,8 +20,9 @@ const SafariZones = () => {
     {
       name: "Bijrani Zone",
       description:
-        "A favorite for wildlife enthusiasts, Bijrani Zone features mixed forests and open meadows, ideal for spotting leopards and diverse birdlife.",
+        "A favorite for wildlife enthusiasts, Bijrani Zone features mixed forests and open meadows, ideal for spotting Royal Bengal Tigers, leopards, and diverse birdlife.",
       wildlife: [
+        "Royal Bengal Tiger",
         "Leopard",
         "Chital Deer",
         "Sloth Bear",
@@ -33,8 +33,14 @@ const SafariZones = () => {
     {
       name: "Jhirna Zone",
       description:
-        "Open year-round, Jhirna Zone is known for its accessibility and rich biodiversity, including sightings of wild boars and nilgai.",
-      wildlife: ["Wild Boar", "Nilgai", "Jackal", "Barking Deer"],
+        "Open year-round, Jhirna Zone is known for its accessibility and rich biodiversity, with opportunities to spot Royal Bengal Tigers alongside wild boars and nilgai.",
+      wildlife: [
+        "Royal Bengal Tiger",
+        "Wild Boar",
+        "Nilgai",
+        "Jackal",
+        "Barking Deer",
+      ],
       bestTime: "Year-Round",
     },
   ];
@@ -52,8 +58,7 @@ const SafariZones = () => {
         <p className="text-lg sm:text-xl text-green-700 mb-12 max-w-3xl mx-auto text-center">
           Explore the diverse <strong>Jungle Safari</strong> zones of{" "}
           <strong>Jim Corbett</strong> National Park. Each zone offers a unique{" "}
-          <strong>Jim Corbett Safari</strong> experience, from tiger sightings
-          to birdwatching adventures.
+          <strong>Jim Corbett Safari</strong> experience, from tiger sightings to birdwatching adventures.
         </p>
 
         {/* Zones Grid */}
@@ -88,7 +93,7 @@ const SafariZones = () => {
           <h3 className="text-3xl font-semibold text-green-900 mb-6">
             Jim Corbett Safari Map
           </h3>
-          <div className="relative h-96 w-full max-w-7xl  max-h-full mx-auto rounded-lg overflow-hidden shadow-lg border">
+          <div className="relative h-96 w-full max-w-7xl max-h-full mx-auto rounded-lg overflow-hidden shadow-lg border">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4032.0759003639455!2d79.06801346656812!3d29.398295154002643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDIzJzUzLjMiTiA3OcKwMDQnMDUuOCJF!5e1!3m2!1sen!2sin!4v1747045650881!5m2!1sen!2sin"
               width="600"
@@ -98,7 +103,6 @@ const SafariZones = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            
           </div>
           <p className="text-green-700 mt-6 max-w-2xl mx-auto">
             Navigate the <strong>Jim Corbett Safari</strong> zones with our map,
@@ -110,10 +114,11 @@ const SafariZones = () => {
         {/* Call to Action */}
         <div className="mt-12 text-center">
           <Link
-            href="/book"
-            className="inline-block bg-yellow-400 text-green-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=+919759107189&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
+            className="inline-block bg-gradient-to-bl to-green-800 via-green-600 from-green-400 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
           >
-            Book Your Safari Now
+            Whatsapp Us
           </Link>
         </div>
       </div>

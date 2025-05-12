@@ -5,48 +5,49 @@ import Link from "next/link";
 import Image from "next/image";
 
 const GallerySection = () => {
-  const galleryImages = [
-    {
-      src: "/tiger.webp",
-      alt: "Gypsy Jeep in Jim Corbett Jungle Safari",
-      caption: "Ride in a Gypsy jeep for an exciting Jungle Safari in Jim Corbett National Park.",
-    },
-    {
-      src: "/elephant.webp",
-      alt: "Jungle Safari Jeep in Jim Corbett",
-      caption: "Explore the wild with a Gypsy jeep on a thrilling Jim Corbett Safari adventure.",
-    },
-    {
-      src: "/hornbill.webp",
-      alt: "Jim Corbett Safari Gypsy Jeep",
-      caption: "Experience the rugged terrain of Jim Corbett in a Gypsy jeep during a Jungle Safari.",
-    },
-    {
-      src: "/ghariyal.webp",
-      alt: "Gypsy Jeep Safari in Jim Corbett National Park",
-      caption: "Spot wildlife from a Gypsy jeep on a Jim Corbett Jungle Safari tour.",
-    },
-    {
-      src: "/eagle.webp",
-      alt: "Jim Corbett Gypsy Jeep Adventure",
-      caption: "Enjoy a Gypsy jeep ride through the forests of Jim Corbett on a Jungle Safari.",
-    },
-    {
-      src: "/serpentEagle.webp",
-      alt: "Jungle Safari Gypsy Jeep in Jim Corbett",
-      caption: "Capture the adventure of a Jim Corbett Safari in a classic Gypsy jeep.",
-    },
-    {
-      src: "/sloth.webp",
-      alt: "Jungle Safari Gypsy Jeep in Jim Corbett",
-      caption: "Capture the adventure of a Jim Corbett Safari in a classic Gypsy jeep.",
-    },
-    {
-      src: "/kingfisher.webp",
-      alt: "Jungle Safari Gypsy Jeep in Jim Corbett",
-      caption: "Capture the adventure of a Jim Corbett Safari in a classic Gypsy jeep.",
-    },
-  ];
+const galleryImages = [
+  {
+    src: "/tiger.webp",
+    alt: "Royal Bengal Tiger in Jim Corbett National Park",
+    caption: "The majestic Royal Bengal Tiger is the star attraction of Jim Corbett National Park.",
+  },
+  {
+    src: "/elephant.webp",
+    alt: "Asian Elephant roaming in Jim Corbett jungle",
+    caption: "Asian Elephants can often be seen in herds during jungle safaris in Jim Corbett.",
+  },
+  {
+    src: "/hornbill.webp",
+    alt: "Great Hornbill bird perched on a tree",
+    caption: "The Great Hornbill, with its vibrant colors, is a striking sight in Jim Corbett’s forests.",
+  },
+  {
+    src: "/ghariyal.webp",
+    alt: "Gharial resting near the Ramganga river",
+    caption: "Gharials, known for their long snouts, are commonly found in the Ramganga River of Corbett.",
+  },
+  {
+    src: "/eagle.webp",
+    alt: "Pallas's Fish Eagle flying over water",
+    caption: "Pallas's Fish Eagle is a powerful bird of prey often spotted near water bodies in Corbett.",
+  },
+  {
+    src: "/serpentEagle.webp",
+    alt: "Crested Serpent Eagle on a tree branch",
+    caption: "The Crested Serpent Eagle is a common raptor seen soaring above Corbett's forest canopy.",
+  },
+  {
+    src: "/sloth.webp",
+    alt: "Sloth Bear walking in the jungle",
+    caption: "Sloth Bears are shy creatures that roam the forest floor searching for insects and fruits.",
+  },
+  {
+    src: "/kingfisher.webp",
+    alt: "White-throated Kingfisher near a forest stream",
+    caption: "The White-throated Kingfisher adds a splash of color to the park’s vibrant birdlife.",
+  },
+];
+
 
   return (
     <section className="bg-white py-16">
@@ -90,14 +91,14 @@ const GallerySection = () => {
         
 
         {/* Call to Action */}
-        <div className="mt-12 text-center animate-fade-in delay-200">
+        {/* <div className="mt-12 text-center animate-fade-in delay-200">
           <Link
             href="/book"
             className="inline-block bg-yellow-400 text-green-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
           >
             Book Your Safari Adventure
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
