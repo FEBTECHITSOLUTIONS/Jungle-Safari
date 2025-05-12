@@ -41,8 +41,7 @@ const Footer = () => {
             </h3>
             <p className="text-green-100 text-sm leading-relaxed">
               Experience the thrill of the wild with our guided jungle safaris.
-              Explore exotic wildlife, lush forests, and unforgettable
-              adventures.
+              Explore exotic wildlife, lush forests, and unforgettable adventures.
             </p>
           </div>
 
@@ -67,15 +66,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-2 text-green-100 text-sm">
-              <li>
-                <a href="mailto:info@junglesafari.com">
-                  Email: info@junglesafari.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:+919759107189">Phone: +919759107189</a>
-              </li>
-              <li>Address: 123 Wild Trail, Jungle City, JC 45678</li>
+              <a href="mailto:info@junglesafari.com">Email: info@junglesafari.com</a>
+              <a href="tel:+919759107189">Phone: +919759107189</a>
+              <a href="/">Address: 123 Wild Trail, Jungle City, JC 45678</a >
             </ul>
             <div className="flex space-x-4 mt-4">
               {socialLinks.map((social) => (
