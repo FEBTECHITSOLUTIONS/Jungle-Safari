@@ -10,14 +10,24 @@ const SafariZones = () => {
       name: "Dhikala Zone",
       description:
         "The heart of Jim Corbett, Dhikala Zone is renowned for its vast grasslands and dense forests, offering the best chances to spot Royal Bengal Tigers.",
-      wildlife: ["Royal Bengal Tiger", "Asian Elephant", "Sambar Deer", "Hog Deer"],
+      wildlife: [
+        "Royal Bengal Tiger",
+        "Asian Elephant",
+        "Sambar Deer",
+        "Hog Deer",
+      ],
       bestTime: "November to June",
     },
     {
       name: "Bijrani Zone",
       description:
         "A favorite for wildlife enthusiasts, Bijrani Zone features mixed forests and open meadows, ideal for spotting leopards and diverse birdlife.",
-      wildlife: ["Leopard", "Chital Deer", "Sloth Bear", "Over 300 Bird Species"],
+      wildlife: [
+        "Leopard",
+        "Chital Deer",
+        "Sloth Bear",
+        "Over 300 Bird Species",
+      ],
       bestTime: "October to June",
     },
     {
@@ -42,7 +52,8 @@ const SafariZones = () => {
         <p className="text-lg sm:text-xl text-green-700 mb-12 max-w-3xl mx-auto text-center">
           Explore the diverse <strong>Jungle Safari</strong> zones of{" "}
           <strong>Jim Corbett</strong> National Park. Each zone offers a unique{" "}
-          <strong>Jim Corbett Safari</strong> experience, from tiger sightings to birdwatching adventures.
+          <strong>Jim Corbett Safari</strong> experience, from tiger sightings
+          to birdwatching adventures.
         </p>
 
         {/* Zones Grid */}
@@ -56,14 +67,17 @@ const SafariZones = () => {
                 {zone.name}
               </h3>
               <p className="text-green-800 mb-4">{zone.description}</p>
-              <h4 className="text-lg font-semibold text-green-900 mb-2">Wildlife Highlights</h4>
+              <h4 className="text-lg font-semibold text-green-900 mb-2">
+                Wildlife Highlights
+              </h4>
               <ul className="text-green-800 text-sm mb-4 space-y-1 list-disc list-inside">
                 {zone.wildlife.map((animal, index) => (
                   <li key={index}>{animal}</li>
                 ))}
               </ul>
               <p className="text-green-800 text-sm">
-                <span className="font-semibold">Best Time to Visit:</span> {zone.bestTime}
+                <span className="font-semibold">Best Time to Visit:</span>{" "}
+                {zone.bestTime}
               </p>
             </div>
           ))}
@@ -74,22 +88,22 @@ const SafariZones = () => {
           <h3 className="text-3xl font-semibold text-green-900 mb-6">
             Jim Corbett Safari Map
           </h3>
-          <div className="relative h-96 w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src="/Jipsy.webp"
-              alt="Map of Jim Corbett Safari Zones"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
-            <div className="absolute inset-0 bg-green-900 opacity-20"></div>
-            <p className="absolute bottom-4 left-4 text-white text-sm italic">
-              Placeholder: Interactive map of Jim Corbett Safari Zones coming soon!
-            </p>
+          <div className="relative h-96 w-full max-w-7xl  max-h-full mx-auto rounded-lg overflow-hidden shadow-lg border">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4032.0759003639455!2d79.06801346656812!3d29.398295154002643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDIzJzUzLjMiTiA3OcKwMDQnMDUuOCJF!5e1!3m2!1sen!2sin!4v1747045650881!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              allowFullScreen=""
+              className="w-full"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+            
           </div>
           <p className="text-green-700 mt-6 max-w-2xl mx-auto">
-            Navigate the <strong>Jim Corbett Safari</strong> zones with our map, highlighting
-            key areas like Dhikala, Bijrani, and Jhirna for your <strong>Jungle Safari</strong> adventure.
+            Navigate the <strong>Jim Corbett Safari</strong> zones with our map,
+            highlighting key areas like Dhikala, Bijrani, and Jhirna for your{" "}
+            <strong>Jungle Safari</strong> adventure.
           </p>
         </div>
 

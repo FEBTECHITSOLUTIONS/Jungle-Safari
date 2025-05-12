@@ -66,9 +66,32 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-2 text-green-100 text-sm">
-              <a href="mailto:info@junglesafari.com">Email: info@junglesafari.com</a>
-              <a href="tel:+919759107189">Phone: +919759107189</a>
-              <a href="/">Address: 123 Wild Trail, Jungle City, JC 45678</a >
+              <li>
+                <a
+                  href="mailto:info@junglesafari.com"
+                  className="hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Email: info@junglesafari.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+919759107189"
+                  className="hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Phone: +91 97591 07189
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Address: 123 Wild Trail, Jungle City, JC 45678
+                </a>
+              </li>
             </ul>
             <div className="flex space-x-4 mt-4">
               {socialLinks.map((social) => (
@@ -78,7 +101,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-100 hover:text-yellow-300 transition-colors duration-300"
-                  aria-label={social.name}
+                  aria-label={`Follow us on ${social.name}`}
                 >
                   {social.icon}
                 </a>
