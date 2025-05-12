@@ -33,20 +33,20 @@ const Footer = () => {
   return (
     <footer className="bg-green-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex justify-between items-center">
           {/* Brand Info */}
           <div>
             <h3 className="text-2xl font-extrabold tracking-tight mb-4">
               Jungle Safari
             </h3>
-            <p className="text-green-100 text-sm leading-relaxed">
+            <p className="text-green-100 text-sm leading-relaxed max-w-80">
               Experience the thrill of the wild with our guided jungle safaris.
               Explore exotic wildlife, lush forests, and unforgettable adventures.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {navItems.map((item) => (
@@ -57,10 +57,10 @@ const Footer = () => {
                   >
                     {item.name}
                   </Link>
-                </li>
+                </li> 
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div>

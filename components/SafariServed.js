@@ -100,7 +100,7 @@ const SafariServed = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-12 text-center animate-fade-in delay-200">
+        {/* <div className="mt-12 text-center animate-fade-in delay-200">
           <Link
             target="_blank"
             href="https://api.whatsapp.com/send?phone=+919759107189&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
@@ -110,7 +110,7 @@ const SafariServed = () => {
           >
             Whatsapp Us
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

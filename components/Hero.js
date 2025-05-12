@@ -26,7 +26,7 @@ const Hero = () => {
           Discover the wild heart of nature with thrilling safaris, exotic wildlife, and breathtaking landscapes.
         </p>
         <Link
-          href="/book"
+          href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
           className="inline-block bg-yellow-400 text-green-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up delay-200"
         >
           Book Your Safari Now
