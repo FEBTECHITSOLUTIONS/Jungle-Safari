@@ -49,12 +49,12 @@ const Navbar = () => {
 
           {/* Book Now Button (Desktop) */}
           <div className="hidden md:block">
-            <a
+            <Link
               href="/book"
               className="bg-yellow-400 text-green-900 px-5 py-2 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-lg transition-all duration-300"
             >
               Book Now
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,23 +94,23 @@ const Navbar = () => {
         <ul className="bg-green-800 px-4 pt-4 pb-6 space-y-4">
           {navitems.map((item, index) => (
             <li key={index}>
-              <a
+              <Link
                 href={item.links}
                 onClick={toggleMenu}
                 className="block text-white text-lg font-medium hover:text-yellow-300 transition-colors duration-300"
               >
                 {item.name}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
-            <a
+            <Link
               href="/book"
               onClick={toggleMenu}
               className="block bg-yellow-400 text-green-900 px-5 py-2 rounded-full font-semibold text-lg hover:bg-yellow-500 text-center transition-all duration-300"
             >
               Book Now
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
