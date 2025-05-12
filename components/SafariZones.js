@@ -89,7 +89,7 @@ const SafariZones = () => {
               height="450"
               allowFullScreen=""
               className="w-full"
-              loading="lazy"
+              
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>

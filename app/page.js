@@ -5,6 +5,7 @@ import SafariZones from "@/components/SafariZones";
 import React from "react";
 import GallerySection from "@/components/GallerySection";
 import SafariServed from "@/components/SafariServed";
+import CorbettHistory from "@/components/CorbetHistory";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <SafariZones />
       <GallerySection />
       <SafariServed />
+      <CorbettHistory />
     </>
   );
 };
