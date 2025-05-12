@@ -58,7 +58,8 @@ const SafariZones = () => {
         <p className="text-lg sm:text-xl text-green-700 mb-12 max-w-3xl mx-auto text-center">
           Explore the diverse <strong>Jungle Safari</strong> zones of{" "}
           <strong>Jim Corbett</strong> National Park. Each zone offers a unique{" "}
-          <strong>Jim Corbett Safari</strong> experience, from tiger sightings to birdwatching adventures.
+          <strong>Jim Corbett Safari</strong> experience, from tiger sightings
+          to birdwatching adventures.
         </p>
 
         {/* Zones Grid */}
@@ -72,18 +73,6 @@ const SafariZones = () => {
                 {zone.name}
               </h3>
               <p className="text-green-800 mb-4">{zone.description}</p>
-              <h4 className="text-lg font-semibold text-green-900 mb-2">
-                Wildlife Highlights
-              </h4>
-              <ul className="text-green-800 text-sm mb-4 space-y-1 list-disc list-inside">
-                {zone.wildlife.map((animal, index) => (
-                  <li key={index}>{animal}</li>
-                ))}
-              </ul>
-              <p className="text-green-800 text-sm">
-                <span className="font-semibold">Best Time to Visit:</span>{" "}
-                {zone.bestTime}
-              </p>
             </div>
           ))}
         </div>
