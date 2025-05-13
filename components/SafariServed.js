@@ -90,7 +90,7 @@ const SafariServed = () => {
               </div>
 
               {/* Safari Name */}
-              <h3 className="text-2xl font-semibold text-yellow-500 mb-2 border flex justify-between items-center">
+              <h3 className="text-2xl font-semibold text-yellow-500 mb-2  flex justify-between items-center">
                 <span className=""> {safari.name}</span>
                 <span className="text-green-700 text-[16px] tracking-wider">
                   ₹{safari.rate}
