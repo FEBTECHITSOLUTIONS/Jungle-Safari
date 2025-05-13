@@ -41,7 +41,8 @@ const Footer = () => {
             </h3>
             <p className="text-green-100 text-sm leading-relaxed max-w-80">
               Experience the thrill of the wild with our guided jungle safaris.
-              Explore exotic wildlife, lush forests, and unforgettable adventures.
+              Explore exotic wildlife, lush forests, and unforgettable
+              adventures.
             </p>
           </div>
 
@@ -84,12 +85,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="https://maps.example.com"
+                  href="https://maps.app.goo.gl/U6P54fGABYZ7eF8h8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-yellow-300 transition-colors duration-300"
                 >
-                  Address: 123 Wild Trail, Jungle City, JC 45678
+                  Address: 93X9+782 sewal Khaliya, Uttarakhand
                 </Link>
               </li>
             </ul>

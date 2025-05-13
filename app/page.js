@@ -6,6 +6,8 @@ import React from "react";
 import GallerySection from "@/components/GallerySection";
 import SafariServed from "@/components/SafariServed";
 import CorbettHistory from "@/components/CorbetHistory";
+import Map from "@/components/map";
+import ContactForm from "@/components/ContactForm";
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
       <GallerySection />
       <SafariServed />
       <CorbettHistory />
+      <Map />
+      <ContactForm />
     </>
   );
 };

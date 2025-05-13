@@ -54,13 +54,13 @@ const SafariServed = () => {
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-green-900 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
-          <FaCarSide className="text-yellow-400 h-8 w-8" />
+        <h2 className="text-3xl sm:text-5xl font-extrabold text-green-900 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
+          {/* <FaCarSide className="text-yellow-500 h-8 w-8" /> */}
           Safari Services in Jim Corbett
         </h2>
 
         {/* Subheading */}
-        <p className="text-lg sm:text-xl text-green-700 mb-12 max-w-3xl mx-auto text-center animate-fade-in delay-100">
+        <p className="text-sm md:text-lg  max-w-xl md:max-w-2xl text-green-700 mb-12 mx-auto text-center animate-fade-in delay-100">
           Choose your perfect <strong>Jungle Safari</strong> experience in{" "}
           <strong>Jim Corbett</strong> National Park. We offer a variety of{" "}
           <strong>Jim Corbett Safari</strong> options to suit every adventurer.
@@ -87,12 +87,12 @@ const SafariServed = () => {
               </div>
 
               {/* Safari Name */}
-              <h3 className="text-2xl font-semibold text-yellow-400 mb-2">
+              <h3 className="text-2xl font-semibold text-yellow-500 mb-2">
                 {safari.name}
               </h3>
 
               {/* Description */}
-              <p className="text-green-800 mb-4 text-sm leading-relaxed  text-justify">
+              <p className="text-green-800 mb-0 text-sm leading-relaxed  text-justify ">
                 {safari.description}
               </p>
             </div>

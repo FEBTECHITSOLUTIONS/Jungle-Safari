@@ -53,8 +53,8 @@ const galleryImages = [
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-green-900 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
-          <FaCamera className="text-yellow-400 h-8 w-8" />
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-green-900 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
+          {/* <FaCamera className="text-yellow-500 h-8 w-8" /> */}
           Jim Corbett Safari Gallery
         </h2>
 
@@ -94,7 +94,7 @@ const galleryImages = [
         {/* <div className="mt-12 text-center animate-fade-in delay-200">
           <Link
             href="/book"
-            className="inline-block bg-yellow-400 text-green-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
+            className="inline-block bg-yellow-500 text-green-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
           >
             Book Your Safari Adventure
           </Link>

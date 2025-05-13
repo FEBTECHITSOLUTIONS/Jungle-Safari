@@ -8,15 +8,15 @@ const AboutSection = () => {
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
-        <h2 className="text-4xl sm:text-5xl font-extrabold   tracking-wide mb-6 flex items-center justify-center gap-3 ">
-          <FaLeaf className="text-yellow-500 h-8 w-8" />
+        <h2 className="text-3xl sm:text-4xl font-extrabold  text-center  tracking-wide mb-6 flex items-center justify-center gap-3 ">
+          {/* <FaLeaf className="text-yellow-500 h-8 w-8" /> */}
           <span className="bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900 viagreen64 from-green-300">
             Discover the Jungle Safari Experience
           </span>
         </h2>
 
         {/* Subheading */}
-        <p className="text-lg sm:text-xl text-green-700 mb-8 max-w-3xl mx-auto">
+        <p className="text-sm md:text-lg  max-w-xl md:max-w-2xl text-green-700 mb-8  mx-auto">
           Embark on a thrilling <strong>Jungle Safari</strong> at{" "}
           <strong>Jim Corbett</strong>, India’s premier wildlife destination.
           Our <strong>Jim Corbett Safari</strong> tours offer an unforgettable

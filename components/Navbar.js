@@ -53,7 +53,7 @@ const Navbar = () => {
           <Link
             href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
             onClick={toggleMenu}
-            className="block text-xs bg-yellow-400 text-green-900 px-5 py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
+            className="block text-xs md:text-[15px] tracking-wide bg-yellow-500 text-green-900 px-5 py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
           >
             Whatsapp Us
           </Link>

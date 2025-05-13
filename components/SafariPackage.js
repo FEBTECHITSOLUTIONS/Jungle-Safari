@@ -53,7 +53,7 @@ const SafariPackage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
         <h2 className="text-4xl sm:text-5xl font-extrabold text-green-900 tracking-tight mb-6 flex items-center justify-center gap-3">
-          <FaPaw className="text-yellow-400 h-8 w-8" />
+          <FaPaw className="text-yellow-500 h-8 w-8" />
           Jim Corbett Safari Packages
         </h2>
 
@@ -72,7 +72,7 @@ const SafariPackage = () => {
               key={pkg.name}
               className="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
-              <h3 className="text-2xl font-semibold text-yellow-400 mb-2">
+              <h3 className="text-2xl font-semibold text-yellow-500 mb-2">
                 {pkg.name}
               </h3>
               <p className="text-3xl font-bold text-green-900 mb-2">{pkg.price}</p>
@@ -81,14 +81,14 @@ const SafariPackage = () => {
               <ul className="text-green-800 text-sm mb-6 space-y-2 text-left">
                 {pkg.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-2">
-                    <FaPaw className="text-yellow-400 h-4 w-4 mt-1" />
+                    <FaPaw className="text-yellow-500 h-4 w-4 mt-1" />
                     {feature}
                   </li>
                 ))}
               </ul>
               <Link
                 href="/book"
-                className="mt-auto bg-yellow-400 text-green-900 px-6 py-3 rounded-full font-semibold text-base hover:bg-yellow-500 hover:shadow-md transition-all duration-300"
+                className="mt-auto bg-yellow-500 text-green-900 px-6 py-3 rounded-full font-semibold text-base hover:bg-yellow-500 hover:shadow-md transition-all duration-300"
               >
                 Book Now
               </Link>
@@ -100,7 +100,7 @@ const SafariPackage = () => {
         <div className="mt-12">
           <Link
             href="/book"
-            className="inline-block bg-yellow-400 text-green-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
+            className="inline-block bg-yellow-500 text-green-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
           >
             Customize Your Jungle Safari
           </Link>
