@@ -45,7 +45,7 @@ const CorbettHistory = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* History Section */}
         <div className="mb-16">
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-green-900 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
+          <h2 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
             {/* <FaHistory className="text-yellow-500 h-8 w-8" /> */}
             History of Jim Corbett
           </h2>
@@ -69,7 +69,7 @@ const CorbettHistory = () => {
 
         {/* How to Reach Section */}
         <div className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-green-900 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
             {/* <FaRoute className="text-yellow-500 h-8 w-8" /> */}
             How to Reach Jim Corbett
           </h2>

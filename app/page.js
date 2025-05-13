@@ -8,6 +8,7 @@ import SafariServed from "@/components/SafariServed";
 import CorbettHistory from "@/components/CorbetHistory";
 import Map from "@/components/map";
 import ContactForm from "@/components/ContactForm";
+import CorbettParkActivities from "@/components/CorbettParkActivities";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Hero />
       <AboutSection />
       {/* <SafariPackage /> */}
+      {/* <CorbettParkActivities/> */}
       <SafariZones />
       <GallerySection />
       <SafariServed />

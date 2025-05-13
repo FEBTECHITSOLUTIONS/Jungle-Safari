@@ -8,6 +8,7 @@ const SafariServed = () => {
   const safariTypes = [
     {
       name: "Jeep Jungle Safari",
+      rate: "7000/Jeep",
       image: "/jeepJungleSafari.webp",
       alt: "Jeep Jungle Safari in Jim Corbett National Park",
       description:
@@ -22,6 +23,7 @@ const SafariServed = () => {
     },
     {
       name: "Canter Safari",
+      rate: "2500/Person",
       image: "/canterSafari.webp",
       alt: "Canter Safari in Jim Corbett National Park",
       description:
@@ -36,6 +38,7 @@ const SafariServed = () => {
     },
     {
       name: "Elephant Ride",
+      rate: "3500/Elephant",
       image: "/elephantRide.webp",
       alt: "Elephant Ride Safari in Jim Corbett National Park",
       description:
@@ -54,7 +57,7 @@ const SafariServed = () => {
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-5xl font-extrabold text-green-900 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
+        <h2 className="text-3xl sm:text-5xl font-extrabold bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
           {/* <FaCarSide className="text-yellow-500 h-8 w-8" /> */}
           Safari Services in Jim Corbett
         </h2>
@@ -87,8 +90,11 @@ const SafariServed = () => {
               </div>
 
               {/* Safari Name */}
-              <h3 className="text-2xl font-semibold text-yellow-500 mb-2">
-                {safari.name}
+              <h3 className="text-2xl font-semibold text-yellow-500 mb-2 border flex justify-between items-center">
+                <span className=""> {safari.name}</span>
+                <span className="text-green-700 text-[16px] tracking-wider">
+                  ₹{safari.rate}
+                </span>
               </h3>
 
               {/* Description */}

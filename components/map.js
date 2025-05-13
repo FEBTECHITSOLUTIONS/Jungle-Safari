@@ -5,7 +5,7 @@ const Map = () => {
     <>
       {/* Map Section */}
       <div className="text-center mb-16">
-        <h3 className="text-3xl font-semibold text-green-900 mb-6 animate-fade-in">
+        <h3 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
           Jim Corbett Safari Map
         </h3>
         <div className="relative h-96 w-full max-w-7xl max-h-full mx-auto rounded-lg overflow-hidden shadow-lg border">

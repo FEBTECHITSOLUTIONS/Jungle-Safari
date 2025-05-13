@@ -49,8 +49,8 @@ const ContactForm = () => {
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-green-900 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in relative">
-          Contact Us
+        <h2 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in relative">
+          Contact Us Now
         </h2>
 
         {/* Subheading */}
@@ -154,7 +154,7 @@ const ContactForm = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:bg-white transition-all duration-300 h-32 resize-none"
+                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-green-400 focus:bg-white transition-all duration-300 h-32 resize-none"
                 required
                 placeholder="Tell us about your safari plans"
               ></textarea>
@@ -163,7 +163,7 @@ const ContactForm = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full cursor-pointer bg-gradient-to-r from-yellow-400 to-green-600 text-white py-3 rounded-lg font-semibold text-lg hover:from-green-600 hover:to-yellow-400 hover:shadow-xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden group"
+              className="w-full cursor-pointer bg-gradient-to-r from-green-400 to-green-600 text-white py-3 rounded-lg font-semibold text-lg hover:from-green-600 hover:to-green-400 hover:shadow-xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden group"
               disabled={status === "submitting"}
             >
              

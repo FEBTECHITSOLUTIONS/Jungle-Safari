@@ -10,7 +10,7 @@ const AboutSection = () => {
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-extrabold  text-center  tracking-wide mb-6 flex items-center justify-center gap-3 ">
           {/* <FaLeaf className="text-yellow-500 h-8 w-8" /> */}
-          <span className="bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900 viagreen64 from-green-300">
+          <span className="bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300">
             Discover the Jungle Safari Experience
           </span>
         </h2>

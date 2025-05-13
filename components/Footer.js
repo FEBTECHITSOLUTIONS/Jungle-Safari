@@ -36,10 +36,10 @@ const Footer = () => {
         <div className="flex justify-between items-center">
           {/* Brand Info */}
           <div>
-            <h3 className="text-2xl font-extrabold tracking-tight mb-4">
+            <h3 className="text-2xl font-extrabold  mb-4 tracking-wide">
               Jungle Safari
             </h3>
-            <p className="text-green-100 text-sm leading-relaxed max-w-80">
+            <p className="text-green-100 text-sm tracking-wide leading-relaxed max-w-80">
               Experience the thrill of the wild with our guided jungle safaris.
               Explore exotic wildlife, lush forests, and unforgettable
               adventures.
@@ -65,8 +65,8 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <ul className="space-y-2 text-green-100 text-sm">
+            <h4 className="text-lg font-bold mb-4 tracking-wider">Contact Us</h4>
+            <ul className="space-y-2 text-green-100 text-sm *:tracking-wide">
               <li>
                 <Link
                   href="mailto:info@junglesafari.com"
@@ -113,8 +113,8 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-green-700 text-center">
-          <p className="text-green-100 text-sm">
-            © {new Date().getFullYear()} Jungle Safari. All rights reserved.
+          <p className="text-green-100 text-lg font-semibold tracking-wide">
+            © {new Date().getFullYear()} Jungle Safari | All rights reserved | Developed By FebTech
           </p>
         </div>
       </div>
