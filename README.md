@@ -41,7 +41,7 @@ yarn install
 
 Set Up Environment Variables:
 
-This project uses FormSubmit for the contact form. Ensure the email (itsanas477@gmail.com) is verified with FormSubmit.
+This project uses FormSubmit for the contact form. Ensure the email (itsanas474@gmail.com) is verified with FormSubmit.
 No additional environment variables are required for this project.
 
 
