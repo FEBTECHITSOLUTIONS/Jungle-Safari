@@ -76,7 +76,7 @@ export default function CorbettParkActivities() {
             EXPLORE CORBETT NATIONAL PARK
           </h1>
           <p className="text-center text-white/90 mt-2 italic">
-            Discover the wilderness of India's oldest national park
+            Discover the wilderness of India&#39;s oldest national park
           </p>
         </div>
       </header>
