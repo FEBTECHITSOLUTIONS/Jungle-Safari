@@ -12,7 +12,7 @@ export default function CorbettParkActivities() {
     {
       id: 1,
       title: 'Corbett Jeep Safari',
-      price: 7000,
+      price: 7500,
       priceUnit: 'jeep',
       image: '/api/placeholder/450/300',
       maxPeople: '6 / jeep',

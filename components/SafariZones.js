@@ -34,7 +34,7 @@ const SafariZones = () => {
         "Wild Boar",
         "Bird Species",
       ],
-      bestTime: "November to June",
+      bestTime: "November to June: Best wildlife sightings",
     },
     {
       name: "Jhirna Zone",
@@ -65,7 +65,7 @@ const SafariZones = () => {
         "Mahseer Fish",
         "Leopard",
       ],
-      bestTime: "November to June",
+      bestTime: "November to June: Best wildlife sightings",
     },
     {
       name: "Dhikala Zone",
@@ -79,7 +79,7 @@ const SafariZones = () => {
         "Sambar Deer",
         "Hog Deer",
       ],
-      bestTime: "November to June",
+      bestTime: "November to June: Best wildlife sightings",
     },
     {
       name: "Sitabani Buffer Zone",
@@ -102,7 +102,7 @@ const SafariZones = () => {
       description:
         "Located near the Kosi River, Garjiya Zone is known for its scenic beauty and offers a good chance to spot Royal Bengal Tigers and crocodiles.",
       wildlife: ["Royal Bengal Tiger", "Crocodile", "Gharial", "Bird Species"],
-      bestTime: "November to June",
+      bestTime: "November to June: Best wildlife sightings",
     },
     {
       name: "Phato Zone",
@@ -111,7 +111,7 @@ const SafariZones = () => {
       description:
         "A lesser-known zone, Phato offers an offbeat safari experience with dense forests, ideal for spotting Royal Bengal Tigers and other wildlife.",
       wildlife: ["Royal Bengal Tiger", "Leopard", "Sloth Bear", "Wild Boar"],
-      bestTime: "November to June",
+      bestTime: "November to June: Best wildlife sightings",
     },
     {
       name: "Bhandarpani Zone",
@@ -126,7 +126,7 @@ const SafariZones = () => {
         "Sloth Bear",
         "Various Bird Species",
       ],
-      bestTime: "November to June",
+      bestTime: "November to June: Best wildlife sightings",
     },
   ];
 
