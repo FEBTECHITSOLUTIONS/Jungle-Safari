@@ -24,6 +24,12 @@ const SafariServed = () => {
         "Phato",
         "Sitabani",
       ],
+      points: [
+        "Permission of CTR, Jeep, Driver, Permit, All Entries & Taxes.",
+        "Guide Fee to be paid by the guest on the spot directly.",
+        "Pick & drop is not included from hotels.",
+        "No Refund Policy.",
+      ],
     },
     {
       name: "Canter Safari",
@@ -35,9 +41,13 @@ const SafariServed = () => {
       alt: "Canter Safari in Jim Corbett National Park",
       description:
         "The Canter Safari in Jim Corbett is designed for larger groups, accommodating up to 16 people in a single vehicle. This open-air bus-like vehicle offers a group adventure, covering core zones like Dhikala, which are renowned for their high tiger-sighting probability. The elevated seating provides a safe and comfortable vantage point to spot wildlife such as elephants, deer, and jackals. Canter Safaris are scheduled twice daily—morning and afternoon—and last around 4-5 hours. This option is perfect for families or groups looking to explore the park together while enjoying a guided tour through Jim Corbett's diverse landscapes.",
-      highlights: [
-        "Dhiklana",
-        
+      highlights: ["Dhiklana"],
+      points: [
+        "Maximum 6 Persons & 1 children (b/w - 5 to 12 years) are allowed in ONE Jeep",
+        "Permission of CTR, Jeep, Driver, Permit, All Entries & Taxes.",
+        "Guide Fee to be paid by the guest on the spot directly.",
+        "Pick & drop is not included from hotels.",
+        "No Refund Policy.",
       ],
     },
     {
@@ -49,8 +59,13 @@ const SafariServed = () => {
       alt: "Elephant Ride Safari in Jim Corbett National Park",
       description:
         "An Elephant Ride/Safari in Jim Corbett offers a unique and traditional way to explore the park's dense forests and grasslands. Riding atop an elephant, you'll get up close to nature, accessing areas that vehicles can't reach. This eco-friendly safari is perfect for those seeking a serene experience, with opportunities to spot wildlife like deer, wild boars, and even Royal Bengal Tigers from a unique perspective. The ride typically lasts 1 hour and is available in select zones like Bijrani and Dhikala. It's a favorite for photography lovers and those wanting a more intimate connection with the park's natural beauty.",
-      highlights: [
-        "Dhikuli"
+      highlights: ["Dhikuli"],
+      points: [
+        "Maximum 6 Persons & 1 children (b/w - 5 to 12 years) are allowed in ONE Jeep",
+        "Permission of CTR, Jeep, Driver, Permit, All Entries & Taxes.",
+        "Guide Fee to be paid by the guest on the spot directly.",
+        "Pick & drop is not included from hotels.",
+        "No Refund Policy.",
       ],
     },
   ];
@@ -97,7 +112,9 @@ const SafariServed = () => {
                 <span className=""> {safari.name}</span>
               </h3>
               <div className="text-white  *:px-2 *:py-1 *:rounded-md text-sm md:text-[13px] mb-2 font-semibold tracking-wider flex justify-between ">
-                <span className="flex bg-gradient-to-tl from-green-600 to-green-400">Indian: ₹{safari.rate}</span>
+                <span className="flex bg-gradient-to-tl from-green-600 to-green-400">
+                  Indian: ₹{safari.rate}
+                </span>
                 {safari.rateforeign && (
                   <span className="flex bg-gradient-to-tl from-blue-600 to-blue-400 border4">
                     Foreigner: {safari.rateforeign}
@@ -107,9 +124,13 @@ const SafariServed = () => {
               {/* <h4></h4> */}
 
               {/* Description */}
-              <p className="text-green-800 mb-0 text-sm leading-relaxed  text-justify ">
-                {safari.description}
-              </p>
+              <div className="text-green-800 mb-0 text-sm leading-relaxed  text-justify ">
+                <ul className=" text-sm   font-semibold list-disc list-inside">
+                  {safari.points.map((point, index) => (
+                    <li className="leading-relaxed" key={index}>{point}</li>
+                  ))}
+                </ul>
+              </div>
               <ul className="text-slate-300 mt-3 text-sm mb-2 space-y-1 list-disc list-inside flex flex-wrap *:mr-2">
                 {safari.highlights.map((keyzones, index) => (
                   <span
@@ -129,15 +150,6 @@ const SafariServed = () => {
             </div>
           ))}
         </div>
-        <ul className=" text-sm  bg-gradient-to-tl bg-clip-text text-transparent to-red-600 via-red-500 from-red-400 font-semibold text-center">
-          <li>
-            {" "}
-            Permission of CTR, Jeep, Driver, Permit, All Entries & Taxes.
-          </li>
-          <li>Guide Fee to be paid by the guest on the spot directly.</li>
-          <li>Pick & drop is not included from hotels.</li>
-          <li>No Refund Policy.</li>
-        </ul>
 
         {/* Call to Action */}
         {/* <div className="mt-12 text-center animate-fade-in delay-200">
