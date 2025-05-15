@@ -86,7 +86,7 @@ export default function CorbettParkActivities() {
           {activities.map((activity) => (
             <div 
               key={activity.id}
-              className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white border border-green-100"
+              className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300  border border-green-100"
               onMouseEnter={() => setHoveredCard(activity.id)}
               onMouseLeave={() => setHoveredCard(null)}
             >
@@ -95,6 +95,7 @@ export default function CorbettParkActivities() {
                 <Image 
                   src={activity.image} 
                   alt={activity.title}
+                  loading='lazy'
                   layout="fill"
                   objectFit="cover"
                   className={`transition-transform duration-700 ${hoveredCard === activity.id ? 'scale-110' : 'scale-100'}`}

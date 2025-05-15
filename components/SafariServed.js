@@ -11,10 +11,10 @@ const SafariServed = () => {
       rate: "7500/Jeep",
       rateforeign: "15000/Jeep",
       timing: "Morning 6:00 AM - 9.00 AM | Evening 2:30 PM - 6:00 PM ",
-      image: "/jeepJungleSafari.webp",
+      image: "/jeepJungleSafari.jpg",
       alt: "Jeep Jungle Safari in Jim Corbett National Park",
       description:
-        "The Jeep Jungle Safari is the most popular way to explore Jim Corbett National Park, offering an intimate and thrilling wildlife experience. Perfect for small groups of 6-8 people, this safari allows you to navigate through zones like Dhikala, Bijrani, and Jhirna. Accompanied by an expert guide, you'll have the best chances to spot Royal Bengal Tigers, leopards, and a variety of bird species. The open jeep provides unobstructed views, making it ideal for photography enthusiasts. Safaris typically last 3-4 hours, either in the morning or afternoon, ensuring you experience the park's vibrant ecosystem at its peak activity times.",
+        "The Jeep Jungle Safari is the most popular way to explore Jim Corbett National Park, offering an intimate and thrilling wildlife experience. Perfect for small groups of 6-8 people, this safari allows you to navigate through zones like Dhikala, Bijrani, and Jhirna. Accompanied by an expert guide, you'll have the best chances to spot Royal Bengal Tigers, leopards, and a variety of bird species. The open jeep provides unobstructed views, making it ideal for photography enthusiasts. Safaris typically last 3-4 hours, either in the morning or afternoon, ensuring you experience the park's vibrant ecosystem.",
       highlights: [
         "Bijrani",
         "Garjiya",
@@ -29,45 +29,34 @@ const SafariServed = () => {
       name: "Canter Safari",
       rate: "2500/Person",
       rateforeign: "5000/Person",
-      image: "/canterSafari.webp",
+      image: "/canterSafari.jpg",
       timing: "Morning 6:00 AM - 9.00 AM | Evening 2:30 PM - 6:00 PM ",
 
       alt: "Canter Safari in Jim Corbett National Park",
       description:
         "The Canter Safari in Jim Corbett is designed for larger groups, accommodating up to 16 people in a single vehicle. This open-air bus-like vehicle offers a group adventure, covering core zones like Dhikala, which are renowned for their high tiger-sighting probability. The elevated seating provides a safe and comfortable vantage point to spot wildlife such as elephants, deer, and jackals. Canter Safaris are scheduled twice daily—morning and afternoon—and last around 4-5 hours. This option is perfect for families or groups looking to explore the park together while enjoying a guided tour through Jim Corbett's diverse landscapes.",
       highlights: [
-        "Bijrani",
-        "Garjiya",
-        "Jhirna",
-        "Dhela",
-        "Durgadevi",
-        "Phato",
-        "Sitabani",
+        "Dhiklana",
+        
       ],
     },
     {
       name: "Elephant Ride",
-      rate: "3500/Elephant",
-      image: "/elephantRide.webp",
+      rate: "4000/Elephant",
+      image: "/elephantRide.jpg",
       timing: "Morning 6:00 AM - 9.00 AM | Evening 2:30 PM - 6:00 PM ",
 
       alt: "Elephant Ride Safari in Jim Corbett National Park",
       description:
         "An Elephant Ride/Safari in Jim Corbett offers a unique and traditional way to explore the park's dense forests and grasslands. Riding atop an elephant, you'll get up close to nature, accessing areas that vehicles can't reach. This eco-friendly safari is perfect for those seeking a serene experience, with opportunities to spot wildlife like deer, wild boars, and even Royal Bengal Tigers from a unique perspective. The ride typically lasts 1-2 hours and is available in select zones like Bijrani and Dhikala. It's a favorite for photography lovers and those wanting a more intimate connection with the park's natural beauty.",
       highlights: [
-        "Bijrani",
-        "Garjiya",
-        "Jhirna",
-        "Dhela",
-        "Durgadevi",
-        "Phato",
-        "Sitabani",
+        "Dhikuli"
       ],
     },
   ];
 
   return (
-    <section className="bg-white py-16">
+    <section className=" py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <h2 className="text-3xl sm:text-5xl font-extrabold bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
@@ -95,6 +84,7 @@ const SafariServed = () => {
                   src={safari.image}
                   alt={safari.alt}
                   layout="fill"
+                  loading="lazy"
                   objectFit="cover"
                   className="transform hover:scale-105 transition-transform duration-300"
                   placeholder="blur"
@@ -106,10 +96,10 @@ const SafariServed = () => {
               <h3 className="text-2xl font-semibold text-yellow-500 mb-2  flex justify-between items-center">
                 <span className=""> {safari.name}</span>
               </h3>
-              <div className="text-green-700 text-sm md:text-[13px] mb-2 font-semibold tracking-wider flex justify-between ">
+              <div className="text-white *:bg-gradient-to-tl *:from-green-600 *:to-green-400 *:px-2 *:py-1 *:rounded-md text-sm md:text-[13px] mb-2 font-semibold tracking-wider flex justify-between ">
                 <span className="flex">Indian: ₹{safari.rate}</span>
                 {safari.rateforeign && (
-                  <span className="flex text-blue-500">
+                  <span className="flex ">
                     Foreigner: {safari.rateforeign}
                   </span>
                 )}
@@ -136,19 +126,18 @@ const SafariServed = () => {
               <p className="mt-2 text-[13px] text-green-400 font-semibold text-center">
                 Safari Timing Varies as Season Changes
               </p>
-             
             </div>
           ))}
         </div>
-           <ul className=" text-sm  bg-gradient-to-tl bg-clip-text text-transparent to-red-600 via-red-500 from-red-400 font-semibold text-center">
-                <li>
-                  {" "}
-                  Permission of CTR, Jeep, Driver, Permit, All Entries &
-                  Taxes.
-                </li>
-                <li>Guide Fee to be paid by the guest on the spot directly.</li>
-                <li>Pick & drop is not included from hotels.</li>
-              </ul>
+        <ul className=" text-sm  bg-gradient-to-tl bg-clip-text text-transparent to-red-600 via-red-500 from-red-400 font-semibold text-center">
+          <li>
+            {" "}
+            Permission of CTR, Jeep, Driver, Permit, All Entries & Taxes.
+          </li>
+          <li>Guide Fee to be paid by the guest on the spot directly.</li>
+          <li>Pick & drop is not included from hotels.</li>
+          <li>No Refund Policy.</li>
+        </ul>
 
         {/* Call to Action */}
         {/* <div className="mt-12 text-center animate-fade-in delay-200">

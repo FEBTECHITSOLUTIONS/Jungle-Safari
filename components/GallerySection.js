@@ -159,7 +159,7 @@ const GallerySection = () => {
   ];
 
   return (
-    <section className="bg-white py-16">
+    <section className=" py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
@@ -185,6 +185,7 @@ const GallerySection = () => {
               <Image
                 src={image.src}
                 alt={image.alt}
+                loading="lazy"
                 width={400}
                 height={300}
                 className="object-cover w-full h-64 sm:h-72 lg:h-80 transform group-hover:scale-105 transition-transform duration-300"

@@ -27,7 +27,7 @@ const Navbar = () => {
               href="/"
               className="text-3xl font-extrabold text-white tracking-tight"
             >
-              Jungle Safari
+              Jim Corbett Jungle Safari
             </Link>
           </div>
 

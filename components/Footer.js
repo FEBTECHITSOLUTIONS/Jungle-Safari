@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Brand Info */}
           <div>
             <h3 className="text-2xl font-extrabold  mb-4 tracking-wide">
-              Jungle Safari
+              Jim Corbett Jungle Safari
             </h3>
             <p className="text-green-100 text-sm tracking-wide leading-relaxed max-w-80">
               Experience the thrill of the wild with our guided jungle safaris.
@@ -65,14 +65,16 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-bold mb-4 tracking-wider">Contact Us</h4>
+            <h4 className="text-lg font-bold mb-4 tracking-wider">
+              Contact Us
+            </h4>
             <ul className="space-y-2 text-green-100 text-sm *:tracking-wide">
               <li>
                 <Link
-                  href="mailto:info@junglesafari.com"
+                  href="mailto:corbettjunglesafari39@gmail.com"
                   className="hover:text-yellow-300 transition-colors duration-300"
                 >
-                  Email: info@junglesafari.com
+                  Email: corbettjunglesafari39@gmail.com
                 </Link>
               </li>
               <li>
@@ -114,7 +116,8 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-green-700 text-center">
           <p className="text-green-100 text-lg font-semibold tracking-wide">
-            © {new Date().getFullYear()} Jungle Safari | All rights reserved | Developed By FebTech
+            © {new Date().getFullYear()} Jungle Safari | All rights reserved |
+            Developed By FebTech
           </p>
         </div>
       </div>

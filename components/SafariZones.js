@@ -8,7 +8,7 @@ const SafariZones = () => {
   const zones = [
     {
       name: "Bijrani Zone",
-      image: "/zones/bijrani.webp",
+      image: "/zones/bijrani.jpg",
       alt: "Bijrani Zone in Jim Corbett Safari",
       description:
         "A favorite for wildlife enthusiasts, Bijrani Zone features mixed forests and open meadows, ideal for spotting Royal Bengal Tigers, leopards, and diverse birdlife.",
@@ -24,7 +24,7 @@ const SafariZones = () => {
 
     {
       name: "Dhela Zone",
-      image: "/zones/dhela.webp",
+      image: "/zones/dhela.jpg",
       alt: "Dhela Zone in Jim Corbett Jungle Safari",
       description:
         "A relatively new zone, Dhela offers a quieter safari experience with dense forests and grasslands, perfect for spotting Royal Bengal Tigers and diverse wildlife.",
@@ -38,7 +38,7 @@ const SafariZones = () => {
     },
     {
       name: "Jhirna Zone",
-      image: "/zones/jhirna.webp",
+      image: "/zones/jhirna.jpg",
       alt: "Jhirna Zone in Jim Corbett National Park",
       description:
         "Open year-round, Jhirna Zone is known for its accessibility and rich biodiversity, with opportunities to spot Royal Bengal Tigers alongside wild boars and nilgai.",
@@ -54,7 +54,7 @@ const SafariZones = () => {
 
     {
       name: "Durga Devi Zone",
-      image: "/zones/durgadevi.webp",
+      image: "/zones/durgadevi.jpg",
       alt: "Durga Devi Zone in Jim Corbett Safari",
       description:
         "Known for its hilly terrain and the Mandal River, Durga Devi Zone is a haven for birdwatchers and offers chances to spot Royal Bengal Tigers and elephants.",
@@ -69,7 +69,7 @@ const SafariZones = () => {
     },
     {
       name: "Dhikala Zone",
-      image: "/zones/dhiklana.webp",
+      image: "/zones/dhiklana.jpg",
       alt: "Dhikala Zone in Jim Corbett Jungle Safari",
       description:
         "The heart of Jim Corbett, Dhikala Zone is renowned for its vast grasslands and dense forests, offering the best chances to spot Royal Bengal Tigers in their natural habitat.",
@@ -83,7 +83,7 @@ const SafariZones = () => {
     },
     {
       name: "Sitabani Buffer Zone",
-      image: "/zones/sitabanibuffer.webp",
+      image: "/zones/sitabanibuffer.jpg",
       alt: "Sitabani Buffer Zone in Jim Corbett National Park",
       description:
         "A buffer zone offering a serene experience, Sitabani is ideal for nature lovers with opportunities to see Royal Bengal Tigers, deer, and ancient temples.",
@@ -97,7 +97,7 @@ const SafariZones = () => {
     },
     {
       name: "Garjiya Zone",
-      image: "/zones/garjiya.webp",
+      image: "/zones/garjiya.jpg",
       alt: "Garjiya Zone in Jim Corbett Jungle Safari",
       description:
         "Located near the Kosi River, Garjiya Zone is known for its scenic beauty and offers a good chance to spot Royal Bengal Tigers and crocodiles.",
@@ -106,7 +106,7 @@ const SafariZones = () => {
     },
     {
       name: "Phato Zone",
-      image: "/zones/phato.webp",
+      image: "/zones/phato.jpg",
       alt: "Phato Zone in Jim Corbett Safari",
       description:
         "A lesser-known zone, Phato offers an offbeat safari experience with dense forests, ideal for spotting Royal Bengal Tigers and other wildlife.",
@@ -115,7 +115,7 @@ const SafariZones = () => {
     },
     {
       name: "Bhandarpani Zone",
-      image: "/zones/bhandarpani.webp",
+      image: "/zones/bhandarpani.jpg",
       alt: "Bhandarpani Zone in Jim Corbett National Park",
       description:
         "Bhandarpani is one of the serene and less-crowded zones of Jim Corbett, ideal for bird watchers and wildlife photographers seeking peaceful jungle experiences.",
@@ -131,7 +131,7 @@ const SafariZones = () => {
   ];
 
   return (
-    <section className="bg-white py-16">
+    <section className=" py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in">
@@ -160,8 +160,9 @@ const SafariZones = () => {
                   src={zone.image}
                   alt={zone.alt}
                   layout="fill"
+                  loading="lazy"
                   objectFit="cover"
-                  className="transform hover:scale-105 transition-transform duration-300"
+                  className="transform hover:scale-105 transition-transform duration-300 object-top-left"
                 />
               </div>
 

@@ -12,18 +12,18 @@ import CorbettParkActivities from "@/components/CorbettParkActivities";
 
 const Home = () => {
   return (
-    <>
+    <div className="bg-slate-300">
       <Hero />
+      <SafariServed />
+      <CorbettHistory />
       <AboutSection />
       {/* <SafariPackage /> */}
       {/* <CorbettParkActivities/> */}
       <SafariZones />
       <GallerySection />
-      <SafariServed />
-      <CorbettHistory />
       <Map />
       <ContactForm />
-    </>
+    </div>
   );
 };
 

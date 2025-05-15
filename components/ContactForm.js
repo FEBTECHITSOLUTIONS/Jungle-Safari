@@ -46,7 +46,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="bg-white py-16">
+    <section className=" py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <h2 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-bl pb-2 bg-clip-text text-transparent  to-green-900  from-green-300 tracking-tight mb-6 flex items-center justify-center gap-3 animate-fade-in relative">
@@ -61,9 +61,9 @@ const ContactForm = () => {
         </p>
 
         {/* Form Container */}
-        <div className="max-w-lg mx-auto bg-white border border-green-600 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="max-w-lg mx-auto  border border-green-600 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
           <form
-            action="https://formsubmit.co/itsanas477@gmail.com"
+            action="https://formsubmit.co/corbettjunglesafari39@gmail.com"
             method="POST"
             onSubmit={handleSubmit}
             className="space-y-6"
@@ -95,7 +95,7 @@ const ContactForm = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:bg-white transition-all duration-300"
+                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus: transition-all duration-300"
                 required
                 placeholder="Enter your name"
               />
@@ -115,7 +115,7 @@ const ContactForm = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:bg-white transition-all duration-300"
+                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus: transition-all duration-300"
                 required
                 placeholder="Enter your email"
               />
@@ -135,7 +135,7 @@ const ContactForm = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:bg-white transition-all duration-300"
+                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus: transition-all duration-300"
                 required
                 placeholder="Enter your phone number"
               />
@@ -154,7 +154,7 @@ const ContactForm = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-green-400 focus:bg-white transition-all duration-300 h-32 resize-none"
+                className="w-full px-4 py-3 bg-gray-50 border border-green-600 rounded-lg text-green-900 placeholder-green-700 placeholder-opacity-50 focus:outline-none focus:ring-2 focus:ring-green-400 focus: transition-all duration-300 h-32 resize-none"
                 required
                 placeholder="Tell us about your safari plans"
               ></textarea>
