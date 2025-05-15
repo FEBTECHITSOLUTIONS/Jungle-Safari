@@ -10,11 +10,11 @@ const SafariServed = () => {
       name: "Jeep Jungle Safari",
       rate: "7500/Jeep",
       rateforeign: "15000/Jeep",
-      timing: "Morning 6:00 AM - 9.00 AM | Evening 2:30 PM - 6:00 PM ",
+      timing: "Morning 6:00 AM - 9.00 AM | Evening 2:00 PM - 6:00 PM ",
       image: "/jeepJungleSafari.jpg",
       alt: "Jeep Jungle Safari in Jim Corbett National Park",
       description:
-        "The Jeep Jungle Safari is the most popular way to explore Jim Corbett National Park, offering an intimate and thrilling wildlife experience. Perfect for small groups of 6-8 people, this safari allows you to navigate through zones like Dhikala, Bijrani, and Jhirna. Accompanied by an expert guide, you'll have the best chances to spot Royal Bengal Tigers, leopards, and a variety of bird species. The open jeep provides unobstructed views, making it ideal for photography enthusiasts. Safaris typically last 3-4 hours, either in the morning or afternoon, ensuring you experience the park's vibrant ecosystem.",
+        "The Jeep Jungle Safari is the most popular way to explore Jim Corbett National Park, offering an intimate and thrilling wildlife experience. Perfect for small groups of 6 people +1 child, this safari allows you to navigate through zones like Dhikala, Bijrani, and Jhirna. Accompanied by an expert guide, you'll have the best chances to spot Royal Bengal Tigers, leopards, and a variety of bird species. The open jeep provides unobstructed views, making it ideal for photography enthusiasts. Safaris typically last 3 hours, either in the morning or afternoon, ensuring you experience the park's vibrant ecosystem.",
       highlights: [
         "Bijrani",
         "Garjiya",
@@ -44,11 +44,11 @@ const SafariServed = () => {
       name: "Elephant Ride",
       rate: "4000/Elephant",
       image: "/elephantRide.jpg",
-      timing: "Morning 6:00 AM - 9.00 AM | Evening 2:30 PM - 6:00 PM ",
+      timing: "Morning Shift | Evening Shift ",
 
       alt: "Elephant Ride Safari in Jim Corbett National Park",
       description:
-        "An Elephant Ride/Safari in Jim Corbett offers a unique and traditional way to explore the park's dense forests and grasslands. Riding atop an elephant, you'll get up close to nature, accessing areas that vehicles can't reach. This eco-friendly safari is perfect for those seeking a serene experience, with opportunities to spot wildlife like deer, wild boars, and even Royal Bengal Tigers from a unique perspective. The ride typically lasts 1-2 hours and is available in select zones like Bijrani and Dhikala. It's a favorite for photography lovers and those wanting a more intimate connection with the park's natural beauty.",
+        "An Elephant Ride/Safari in Jim Corbett offers a unique and traditional way to explore the park's dense forests and grasslands. Riding atop an elephant, you'll get up close to nature, accessing areas that vehicles can't reach. This eco-friendly safari is perfect for those seeking a serene experience, with opportunities to spot wildlife like deer, wild boars, and even Royal Bengal Tigers from a unique perspective. The ride typically lasts 1 hour and is available in select zones like Bijrani and Dhikala. It's a favorite for photography lovers and those wanting a more intimate connection with the park's natural beauty.",
       highlights: [
         "Dhikuli"
       ],
@@ -96,10 +96,10 @@ const SafariServed = () => {
               <h3 className="text-2xl font-semibold text-yellow-500 mb-2  flex justify-between items-center">
                 <span className=""> {safari.name}</span>
               </h3>
-              <div className="text-white *:bg-gradient-to-tl *:from-green-600 *:to-green-400 *:px-2 *:py-1 *:rounded-md text-sm md:text-[13px] mb-2 font-semibold tracking-wider flex justify-between ">
-                <span className="flex">Indian: ₹{safari.rate}</span>
+              <div className="text-white  *:px-2 *:py-1 *:rounded-md text-sm md:text-[13px] mb-2 font-semibold tracking-wider flex justify-between ">
+                <span className="flex bg-gradient-to-tl from-green-600 to-green-400">Indian: ₹{safari.rate}</span>
                 {safari.rateforeign && (
-                  <span className="flex ">
+                  <span className="flex bg-gradient-to-tl from-blue-600 to-blue-400 border4">
                     Foreigner: {safari.rateforeign}
                   </span>
                 )}

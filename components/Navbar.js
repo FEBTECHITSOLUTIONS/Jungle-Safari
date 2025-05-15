@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import { FaPhone, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,15 +49,27 @@ const Navbar = () => {
           </div> */}
 
           {/* Book Now Button (Desktop) */}
-          
 
-          <Link
-            href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
-            onClick={toggleMenu}
-            className="block text-xs md:text-[15px] tracking-wide bg-yellow-500 text-green-900 px-5 py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
-          >
-            Whatsapp Us
-          </Link>
+          <div className="flex gap-4">
+            <Link
+              href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
+              onClick={toggleMenu}
+              className="flex gap-2 justify-center items-center text-xs md:text-[15px] tracking-wide bg-yellow-500 text-green-900 px-5 py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
+            >
+              {" "}
+              <FaWhatsapp size={18} />
+              Whatsapp Us
+            </Link>
+            <Link
+              href="tel:9759107189"
+              onClick={toggleMenu}
+              className="flex gap-2 justify-center items-center text-xs md:text-[15px] tracking-wide bg-yellow-500 text-green-900 px-5 py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
+            >
+              {" "}
+              <FaPhoneAlt size={18} />
+              Call Us
+            </Link>
+          </div>
           {/* Mobile Menu Button */}
           {/* <div className="md:hidden">
             <button
