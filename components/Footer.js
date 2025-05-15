@@ -117,7 +117,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-green-700 text-center">
           <p className="text-green-100 text-lg font-semibold tracking-wide">
             © {new Date().getFullYear()} Jungle Safari | All rights reserved |
-            Developed By FebTech
+            Developed By <Link href="https://anasmalikportfolio.vercel.app/" target="_blank">Febtech</Link>
           </p>
         </div>
       </div>
