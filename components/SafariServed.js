@@ -141,13 +141,26 @@ const SafariServed = () => {
                   </span>
                 ))}
               </ul>
+
+
               <p className="mt-3 text-[13px] text-blue-400 font-semibold text-center">
                 {safari.timing}
               </p>
               <p className="mt-2 text-[13px] text-green-400 font-semibold text-center">
                 Safari Timing Varies as Season Changes
               </p>
+              {/* button */}
+<div className="mt-4 w-full mb-2 mx-auto text-center">
+          <Link
+            href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
+            className=" text-sm px-4 py-2 bg-yellow-500 text-green-900  rounded-full font-semibold  hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
+          >
+           Book Now
+          </Link>
+        </div>
+{/* button ends */}
             </div>
+            
           ))}
         </div>
 
