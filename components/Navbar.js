@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link
               href="/"
-              className="text-3xl font-extrabold text-white tracking-tight"
+              className="text-sm md:text-2xl lg:text-3xl font-extrabold text-white tracking-tight"
             >
               Jim Corbett Jungle Safari
             </Link>
@@ -54,20 +54,20 @@ const Navbar = () => {
             <Link
               href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
               onClick={toggleMenu}
-              className="flex gap-2 justify-center items-center text-xs md:text-[15px] tracking-wide bg-yellow-500 text-green-900 px-5 py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
+              className="flex gap-2 justify-center items-center text-xs md:text-[15px] tracking-wide bg-gradient-to-tl from-cyan-500 to-lime-300 md:bg-yellow-500 text-slate-700 md:text-green-900 px-2 py-1.5  md:px-5 md:py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
             >
               {" "}
-              <FaWhatsapp size={18} />
-              Whatsapp Us
+              <FaWhatsapp size={22} />
+              <span className="hidden md:block">Whatsapp Us</span>
             </Link>
             <Link
               href="tel:9759107189"
               onClick={toggleMenu}
-              className="flex gap-2 justify-center items-center text-xs md:text-[15px] tracking-wide bg-yellow-500 text-green-900 px-5 py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
+              className="flex gap-2 justify-center items-center text-xs md:text-[15px] tracking-wide bg-gradient-to-tl from-cyan-500 to-lime-300 md:bg-yellow-500 text-slate-700 md:text-green-900 px-2 py-1.5  md:px-5 md:py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
             >
               {" "}
-              <FaPhoneAlt size={18} />
-              Call Us
+              <FaPhoneAlt size={16} />
+              <span className="hidden md:block">Call Us</span>
             </Link>
           </div>
           {/* Mobile Menu Button */}

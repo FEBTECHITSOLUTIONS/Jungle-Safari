@@ -10,7 +10,7 @@ const SafariServed = () => {
       name: "Jeep Jungle Safari",
       rate: "7500/Jeep",
       rateforeign: "15000/Jeep",
-      timing: "Morning 6:00 AM - 9.00 AM | Evening 2:00 PM - 6:00 PM ",
+      timing: "Morning 5:30 AM - 9:30 AM | Evening 2:00 PM - 6:00 PM ",
       image: "/jeepJungleSafari.jpg",
       alt: "Jeep Jungle Safari in Jim Corbett National Park",
       description:
@@ -36,7 +36,7 @@ const SafariServed = () => {
       rate: "2500/Person",
       rateforeign: "5000/Person",
       image: "/canterSafari.jpg",
-      timing: "Morning 6:00 AM - 9.00 AM | Evening 2:30 PM - 6:00 PM ",
+      timing: "Morning 5:30 AM - 11.00 AM | Evening 11:00 PM - 6:00 PM ",
 
       alt: "Canter Safari in Jim Corbett National Park",
       description:
@@ -51,15 +51,15 @@ const SafariServed = () => {
       name: "Elephant Ride",
       rate: "4000/Elephant",
       image: "/elephantRide.jpg",
-      timing: "Morning Shift | Evening Shift ",
+      timing: "Morning (6:00 AM - 10:00 AM) | Evening (3:00 AM - 6:00 AM) ",
 
       alt: "Elephant Ride Safari in Jim Corbett National Park",
       description:
         "An Elephant Ride/Safari in Jim Corbett offers a unique and traditional way to explore the park's dense forests and grasslands. Riding atop an elephant, you'll get up close to nature, accessing areas that vehicles can't reach. This eco-friendly safari is perfect for those seeking a serene experience, with opportunities to spot wildlife like deer, wild boars, and even Royal Bengal Tigers from a unique perspective. The ride typically lasts 1 hour and is available in select zones like Bijrani and Dhikala. It's a favorite for photography lovers and those wanting a more intimate connection with the park's natural beauty.",
       highlights: ["Dhikuli"],
       points: [
-        "Max 2 Persons allowed on each Elephant",
-       
+        "Max 4 Persons allowed on each Elephant",
+        "Duration is 1 hour for each Elephant",
         "No Refund Policy.",
       ],
     },
@@ -106,7 +106,7 @@ const SafariServed = () => {
               <h3 className="text-2xl font-semibold text-yellow-500 mb-2  flex justify-between items-center">
                 <span className=""> {safari.name}</span>
               </h3>
-              <div className="text-white  *:px-2 *:py-1 *:rounded-md text-sm md:text-[13px] mb-2 font-semibold tracking-wider flex justify-between ">
+              <div className="text-white  *:px-2 *:py-1 *:rounded-md text-xs md:text-[13px] mb-2 font-semibold tracking-wider flex justify-between ">
                 <span className="flex bg-gradient-to-tl from-green-600 to-green-400">
                   Indian: ₹{safari.rate}
                 </span>
@@ -122,7 +122,9 @@ const SafariServed = () => {
               <div className="text-green-800 mb-0 text-sm leading-relaxed  text-justify ">
                 <ul className=" text-sm   font-semibold list-disc list-inside min-h-40">
                   {safari.points.map((point, index) => (
-                    <li className="leading-relaxed" key={index}>{point}</li>
+                    <li className="leading-relaxed" key={index}>
+                      {point}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -137,25 +139,25 @@ const SafariServed = () => {
                 ))}
               </ul>
 
-
-              <p className="mt-3 text-[13px] text-blue-400 font-semibold text-center">
+              <p className="mt-3 text-[12px] text-blue-400 font-semibold text-center">
                 {safari.timing}
               </p>
               <p className="mt-2 text-[13px] text-green-400 font-semibold text-center">
                 Safari Timing Varies as Season Changes
               </p>
               {/* button */}
-<div className="mt-4 w-full mb-2 mx-auto text-center">
-          <Link
-            href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
-            className=" text-sm px-4 py-2 bg-yellow-500 text-green-900  rounded-full font-semibold  hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
-          >
-           Book Now
-          </Link>
-        </div>
-{/* button ends */}
+              <div className="mt-5 w-full animate-bounce mb-2 mx-auto text-center">
+                <Link
+                  href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
+                  className="relative text-sm px-4 py-2 bg-gradient-to-tl to-red-400 via-red-500 from-red-600/80 text-white  rounded-full font-semibold  hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
+                >
+                  Book Now
+                <div className="size-3 bg-green-500 absolute -top-0 animate-pulse duration-75 -right-0.5 rounded-full"></div>
+
+                </Link>
+              </div>
+              {/* button ends */}
             </div>
-            
           ))}
         </div>
 
