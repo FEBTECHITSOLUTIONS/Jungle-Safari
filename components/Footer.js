@@ -1,7 +1,13 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaMap,
+} from "react-icons/fa";
 
 const Footer = () => {
   const navItems = [
@@ -14,19 +20,19 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      name: "Facebook",
-      href: "https://facebook.com",
-      icon: <FaFacebook className="h-6 w-6" />,
-    },
-    {
-      name: "Twitter",
-      href: "https://twitter.com",
-      icon: <FaTwitter className="h-6 w-6" />,
+      name: "Youtube",
+      href: "https://www.youtube.com/@pankajnegi5102",
+      icon: <FaYoutube className="h-6 w-6" />,
     },
     {
       name: "Instagram",
-      href: "https://instagram.com",
+      href: "https://www.instagram.com/pankaj_corbett/",
       icon: <FaInstagram className="h-6 w-6" />,
+    },
+    {
+      name: "Google Maps",
+      href: "https://www.google.com/maps/place/%F0%9D%97%9D%F0%9D%97%B6%F0%9D%97%BA+%F0%9D%97%96%F0%9D%97%BC%F0%9D%97%BF%F0%9D%97%AF%F0%9D%97%B2%F0%9D%98%81%F0%9D%98%81+%F0%9D%98%80%F0%9D%97%AE%F0%9D%97%B3%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B6(+%F0%9D%99%85%F0%9D%99%AA%F0%9D%99%A3%F0%9D%99%9C%F0%9D%99%A1%F0%9D%99%9A+%F0%9D%99%A8%F0%9D%99%96%F0%9D%99%9B%F0%9D%99%96%F0%9D%99%A7%F0%9D%99%9E+)/@29.3999293,79.0590957,863m/data=!3m1!1e3!4m6!3m5!1s0x390a15f608f9c2b1:0x764de3476ad671fd!8m2!3d29.3981021!4d79.0682685!16s%2Fg%2F11m6xhyrcv?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D",
+      icon: <FaMap className="h-6 w-6" />,
     },
   ];
 
@@ -95,7 +101,10 @@ const Footer = () => {
                   className="hover:text-yellow-300 flex items-center transition-colors duration-300"
                 >
                   <span className="hidden md:flex">Address:</span>{" "}
-                  <span className="ml-1"> 93X9+782 sewal Khaliya, Uttarakhand</span>
+                  <span className="ml-1">
+                    {" "}
+                    93X9+782 sewal Khaliya, Uttarakhand
+                  </span>
                 </Link>
               </li>
             </ul>
