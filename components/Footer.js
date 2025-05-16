@@ -33,13 +33,13 @@ const Footer = () => {
   return (
     <footer className="bg-green-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center gap-5">
           {/* Brand Info */}
           <div>
-            <h3 className="text-2xl font-extrabold  mb-4 tracking-wide">
+            <h3 className="text-sm md:text-2xl font-extrabold  mb-4 tracking-wide">
               Jim Corbett Jungle Safari
             </h3>
-            <p className="text-green-100 text-sm tracking-wide leading-relaxed max-w-80">
+            <p className="text-green-100 text-sm tracking-wide leading-relaxed text-justify max-w-80">
               Experience the thrill of the wild with our guided jungle safaris.
               Explore exotic wildlife, lush forests, and unforgettable
               adventures.
@@ -68,21 +68,23 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4 tracking-wider">
               Contact Us
             </h4>
-            <ul className="space-y-2 text-green-100 text-sm *:tracking-wide">
+            <ul className="space-y-2  text-green-100 text-sm *:tracking-wide">
               <li>
                 <Link
                   href="mailto:corbettjunglesafari39@gmail.com"
-                  className="hover:text-yellow-300 transition-colors duration-300"
+                  className="hover:text-yellow-300 flex items-center transition-colors duration-300"
                 >
-                  Email: corbettjunglesafari39@gmail.com
+                  <span className="hidden md:flex">Email:</span>{" "}
+                  <span className="ml-1">corbettjunglesafari39@gmail.com</span>
                 </Link>
               </li>
               <li>
                 <Link
                   href="tel:+919759107189"
-                  className="hover:text-yellow-300 transition-colors duration-300"
+                  className="hover:text-yellow-300 flex items-center transition-colors duration-300"
                 >
-                  Phone: +91 97591 07189
+                  <span className="hidden md:flex">Phone:</span>{" "}
+                  <span className="ml-1">+91 97591 07189</span>
                 </Link>
               </li>
               <li>
@@ -90,9 +92,10 @@ const Footer = () => {
                   href="https://maps.app.goo.gl/U6P54fGABYZ7eF8h8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-yellow-300 transition-colors duration-300"
+                  className="hover:text-yellow-300 flex items-center transition-colors duration-300"
                 >
-                  Address: 93X9+782 sewal Khaliya, Uttarakhand
+                  <span className="hidden md:flex">Address:</span>{" "}
+                  <span className="ml-1"> 93X9+782 sewal Khaliya, Uttarakhand</span>
                 </Link>
               </li>
             </ul>
@@ -117,7 +120,10 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-green-700 text-center">
           <p className="text-green-100 text-lg font-semibold tracking-wide">
             © {new Date().getFullYear()} Jungle Safari | All rights reserved |
-            Developed By <Link href="https://anasmalikportfolio.vercel.app/" target="_blank">Anas Malik</Link>
+            Developed By{" "}
+            <Link href="https://anasmalikportfolio.vercel.app/" target="_blank">
+              Anas Malik
+            </Link>
           </p>
         </div>
       </div>
