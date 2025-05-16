@@ -43,10 +43,7 @@ const SafariServed = () => {
         "The Canter Safari in Jim Corbett is designed for larger groups, accommodating up to 16 people in a single vehicle. This open-air bus-like vehicle offers a group adventure, covering core zones like Dhikala, which are renowned for their high tiger-sighting probability. The elevated seating provides a safe and comfortable vantage point to spot wildlife such as elephants, deer, and jackals. Canter Safaris are scheduled twice daily—morning and afternoon—and last around 4-5 hours. This option is perfect for families or groups looking to explore the park together while enjoying a guided tour through Jim Corbett's diverse landscapes.",
       highlights: ["Dhiklana"],
       points: [
-        "Maximum 6 Persons & 1 children (b/w - 5 to 12 years) are allowed in ONE Jeep",
-        "Permission of CTR, Jeep, Driver, Permit, All Entries & Taxes.",
-        "Guide Fee to be paid by the guest on the spot directly.",
-        "Pick & drop is not included from hotels.",
+        "Maximum 6 Persons & 1 Child (b/w - 5 to 12 years) are allowed in ONE Jeep",
         "No Refund Policy.",
       ],
     },
@@ -61,10 +58,8 @@ const SafariServed = () => {
         "An Elephant Ride/Safari in Jim Corbett offers a unique and traditional way to explore the park's dense forests and grasslands. Riding atop an elephant, you'll get up close to nature, accessing areas that vehicles can't reach. This eco-friendly safari is perfect for those seeking a serene experience, with opportunities to spot wildlife like deer, wild boars, and even Royal Bengal Tigers from a unique perspective. The ride typically lasts 1 hour and is available in select zones like Bijrani and Dhikala. It's a favorite for photography lovers and those wanting a more intimate connection with the park's natural beauty.",
       highlights: ["Dhikuli"],
       points: [
-        "Maximum 6 Persons & 1 children (b/w - 5 to 12 years) are allowed in ONE Jeep",
-        "Permission of CTR, Jeep, Driver, Permit, All Entries & Taxes.",
-        "Guide Fee to be paid by the guest on the spot directly.",
-        "Pick & drop is not included from hotels.",
+        "Max 2 Persons allowed on each Elephant",
+       
         "No Refund Policy.",
       ],
     },
@@ -117,7 +112,7 @@ const SafariServed = () => {
                 </span>
                 {safari.rateforeign && (
                   <span className="flex bg-gradient-to-tl from-blue-600 to-blue-400 border4">
-                    Foreigner: {safari.rateforeign}
+                    Foreigner: ₹{safari.rateforeign}
                   </span>
                 )}
               </div>
@@ -125,7 +120,7 @@ const SafariServed = () => {
 
               {/* Description */}
               <div className="text-green-800 mb-0 text-sm leading-relaxed  text-justify ">
-                <ul className=" text-sm   font-semibold list-disc list-inside">
+                <ul className=" text-sm   font-semibold list-disc list-inside min-h-40">
                   {safari.points.map((point, index) => (
                     <li className="leading-relaxed" key={index}>{point}</li>
                   ))}
