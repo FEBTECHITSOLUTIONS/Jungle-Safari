@@ -5,9 +5,11 @@ import React, { useState, useEffect } from "react";
 const Hero = () => {
   // Array of images to scroll through
   const images = [
+    "/raindeer.jpg",
     "/dearup.jpg",
     "/elephant.jpg",
     "tiger.webp",
+    "elephanttwin.jpg",
     "/bijranitiger.jpg",
   ];
 
@@ -36,7 +38,7 @@ const Hero = () => {
             opacity: index === currentImageIndex ? 1 : 0,
           }}
         >
-          <div className="absolute inset-0 bg-green-900 opacity-60"></div>
+          {/* <div className="absolute inset-0 bg-green-900 opacity-60"></div> */}
         </div>
       ))}
 

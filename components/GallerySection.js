@@ -78,12 +78,12 @@ const GallerySection = () => {
       caption:
         "The Crested Serpent Eagle is often seen perched silently, scanning for prey on forest floors in Jim Corbett.",
     },
-    {
-      src: "/gallery/galerry-img-12.jpg",
-      alt: "Indian Peacock displaying feathers in Jim Corbett",
-      caption:
-        "The Indian Peacock, with its dazzling plumage, is a graceful and vibrant presence in Jim Corbett’s forests.",
-    },
+    // {
+    //   src: "/gallery/galerry-img-12.jpg",
+    //   alt: "Indian Peacock displaying feathers in Jim Corbett",
+    //   caption:
+    //     "The Indian Peacock, with its dazzling plumage, is a graceful and vibrant presence in Jim Corbett’s forests.",
+    // },
     {
       src: "/gallery/galerry-img-13.jpg",
       alt: "Indian Peacock displaying feathers in Jim Corbett",

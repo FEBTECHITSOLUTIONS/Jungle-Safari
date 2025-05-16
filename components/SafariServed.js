@@ -25,6 +25,7 @@ const SafariServed = () => {
         "Sitabani",
       ],
       points: [
+        "Maximum 6 Persons & 1 Child (b/w - 5 to 12 years) are allowed in ONE Jeep",
         "Permission of CTR, Jeep, Driver, Permit, All Entries & Taxes.",
         "Guide Fee to be paid by the guest on the spot directly.",
         "Pick & drop is not included from hotels.",
@@ -43,7 +44,8 @@ const SafariServed = () => {
         "The Canter Safari in Jim Corbett is designed for larger groups, accommodating up to 16 people in a single vehicle. This open-air bus-like vehicle offers a group adventure, covering core zones like Dhikala, which are renowned for their high tiger-sighting probability. The elevated seating provides a safe and comfortable vantage point to spot wildlife such as elephants, deer, and jackals. Canter Safaris are scheduled twice daily—morning and afternoon—and last around 4-5 hours. This option is perfect for families or groups looking to explore the park together while enjoying a guided tour through Jim Corbett's diverse landscapes.",
       highlights: ["Dhiklana"],
       points: [
-        "Maximum 6 Persons & 1 Child (b/w - 5 to 12 years) are allowed in ONE Jeep",
+        "INR 2500 / Person ( ONE Canter has 16 Seats )",
+        "INR 5000 / Person ( ONE Canter has 16 Seats )",
         "No Refund Policy.",
       ],
     },
@@ -122,7 +124,7 @@ const SafariServed = () => {
               <div className="text-green-800 mb-0 text-sm leading-relaxed  text-justify ">
                 <ul className=" text-sm   font-semibold list-disc list-inside min-h-40">
                   {safari.points.map((point, index) => (
-                    <li className="leading-relaxed" key={index}>
+                    <li className="leading-relaxed pb-2 text-[15px]" key={index}>
                       {point}
                     </li>
                   ))}
@@ -152,8 +154,7 @@ const SafariServed = () => {
                   className="relative text-sm px-4 py-2 bg-gradient-to-tl to-red-400 via-red-500 from-red-600/80 text-white  rounded-full font-semibold  hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
                 >
                   Book Now
-                <div className="size-3 bg-green-500 absolute -top-0 animate-pulse duration-75 -right-0.5 rounded-full"></div>
-
+                  <div className="size-3 bg-green-500 absolute -top-0 animate-pulse duration-75 -right-0.5 rounded-full"></div>
                 </Link>
               </div>
               {/* button ends */}
