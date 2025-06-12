@@ -42,7 +42,7 @@ const SafariServed = () => {
       alt: "Canter Safari in Jim Corbett National Park",
       description:
         "The Canter Safari in Jim Corbett is designed for larger groups, accommodating up to 16 people in a single vehicle. This open-air bus-like vehicle offers a group adventure, covering core zones like Dhikala, which are renowned for their high tiger-sighting probability. The elevated seating provides a safe and comfortable vantage point to spot wildlife such as elephants, deer, and jackals. Canter Safaris are scheduled twice daily—morning and afternoon—and last around 4-5 hours. This option is perfect for families or groups looking to explore the park together while enjoying a guided tour through Jim Corbett's diverse landscapes.",
-      highlights: ["Dhiklana"],
+      highlights: ["Dhikala"],
       points: [
         "INR 2500 / Person ( ONE Canter has 16 Seats )",
         "INR 5000 / Person ( ONE Canter has 16 Seats )",
