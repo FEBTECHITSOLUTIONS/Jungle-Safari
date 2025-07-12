@@ -52,7 +52,7 @@ const Navbar = () => {
 
           <div className="flex gap-4">
             <Link
-              href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
+              href="https://wa.me/9759107189?text=Hello%20Jungle%20Safari%20Team%2C%20I%20need%20your%20service"
               onClick={toggleMenu}
               className="flex gap-2 justify-center items-center text-xs md:text-[15px] tracking-wide bg-gradient-to-tl from-cyan-500 to-lime-300 md:bg-yellow-500 text-slate-700 md:text-green-900 px-2 py-1.5  md:px-5 md:py-2 rounded-full font-semibold  hover:bg-yellow-500 text-center transition-all duration-300"
             >
