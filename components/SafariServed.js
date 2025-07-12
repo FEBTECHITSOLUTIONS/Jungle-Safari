@@ -150,7 +150,7 @@ const SafariServed = () => {
               {/* button */}
               <div className="mt-5 w-full animate-bounce mb-2 mx-auto text-center">
                 <Link
-                  href="https://api.whatsapp.com/send?phone=+919759107189%E2%80%AC&text=Hello%20Jungle%20Safari%20Team,%20I%20need%20your%20service"
+                  href="https://wa.me/9759107189?text=Hello%20Jungle%20Safari%20Team%2C%20I%20need%20your%20service"
                   className="relative text-sm px-4 py-2 bg-gradient-to-tl to-red-400 via-red-500 from-red-600/80 text-white  rounded-full font-semibold  hover:bg-yellow-500 hover:shadow-xl transition-all duration-300"
                 >
                   Book Now
